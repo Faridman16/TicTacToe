@@ -5,27 +5,6 @@ $(document).ready(function() {
   var o_win = 0;
   var x_win = 0;
   var xTurn = true;
-
-  arr=[5,
-    1,
-    2,
-    3,
-    4,
-    5,
-    6];
-  k = 9;
-  var result = '';
-    for(var x=0;x<arr.length;x++){
-        console.log(arr[x]+ ' = '+ k);
-        if(arr[x] == k){
-            result = 'YES';
-            break;
-        }else{
-            result = 'NO';
-        }
-    }
-    console.log(result);
-    return;
   
   $('ul#game li').click( function() {
       if(startGame && !$(this).attr('value')){
